@@ -1,0 +1,62 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+  background: #d1deda;
+}
+
+.main {
+  border: 2px green solid;
+  border-radius: 10px;
+  padding: 12px;
+  padding-top: 0px;
+  background: lightblue;
+  float: left;
+  display: block;
+  text-align: left;
+
+  margin: 100px 36%;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+  display: inline;
+}
+h2 {
+  padding: 15px;
+}
+input {
+  border: 2px solid green;
+  background: #fff;
+  width: 50%;
+  height: 30px;
+}
+
+h2 {
+  padding: 30px;
+  text-align: center;
+}
+input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #008cff;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+#l {
+  text-align: right;
+  display: inline-block;
+  border: 2px solid green;
+  width: 40%;
+}

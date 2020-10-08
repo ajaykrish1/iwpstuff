@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="info" action="" method="post">
+        <h3>EXERCISE 5</h3>
+
+        <fieldset>
+          <input
+            id="username1"
+            pattern="[A-Za-z]{10,}"
+            placeholder="Username"
+            type="text"
+            tabindex="1"
+            required
+            autofocus
+          /><span>*</span>
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Password"
+            type="password"
+            tabindex="2"
+            required
+            autofocus
+          /><span>*</span>
+        </fieldset>
+        <fieldset>
+          <label>Date Of Birth</label>
+          <input
+            name=""
+            type="date"
+            placeholder="Your Date Of Birth"
+            type="date"
+            required
+          /><span>*</span>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Email" type="email" tabindex="3" required /><span
+            >*</span
+          >
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Mobile Number"
+            type="tel"
+            tabindex="4"
+            required
+          /><span>*</span>
+        </fieldset>
+        <fieldset>
+          <label><input type="radio" name="hosting" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="hosting" value="female" /> Female</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="language">Languages Known</label><br />
+          <input type="checkbox" value="english" />
+          <label for=" language 1">English</label>
+          <input type="checkbox" value="hindi" />
+          <label for=" language 2">Hindi</label>
+          <input type="checkbox" value="tamil" />
+          <label for=" language 3">Tamil</label>
+        </fieldset>
+        <fieldset>
+          <label for="state">Select State</label><span>*</span>
+          <select class="dropdown-content" name="state" id="state">
+            <option value="delhi">Delhi</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="tamil nadu">Tamil Nadu</option>
+            <option value="kerela">Kerela</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="himachal">Himachal Pradesh</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit">SUBMIT</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

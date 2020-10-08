@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+</head>
+<style text="text/css">
+.container {
+position: fixed;
+background-color: #ffaa00;
+margin-left: 35%;
+margin-top: 3%;
+text-align: center;
+border: black dotted 3px;
+border-radius: 2%;
+width: 30%;
+font-family: 'Cabin', sans-serif;
+font-size:50%;
+}
+#but{
+margin-bottom: 5px;
+}
+input{
+border-radius: 5px;
+padding:6px 12px;
+}
+input[type="checkbox"] {
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+transform: scale(1.5);
+}
+input[type="radio"] {
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+transform: scale(1.5);
+}
+input[type=submit] {
+width: 40%;
+background-color: #4CAF50;
+color: white;
+padding: 12px 18px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input:focus:invalid {
+border: 5px solid red;
+}
+input:focus:valid {
+border: 5px solid green;
+}
+input:focus:invalid {
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+background-position: right top;
+background-repeat: no-repeat;
+}
+input:required:valid {
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+background-position: right top;
+background-repeat: no-repeat;
+}
+</style>
+<body
+<div class="container">
+<h2 id="font">CSS Form-Pseudo Classes</h2>
+<form name="form1" action="a.php" method="post""get">
+<input type="text" required name="username" id="username" autocomplete="off" autofocus placeholder="Enter your User Name"
+pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"><br><br>
+<input class=""type="password" required name="password" id="password" autocomplete="off" autofocus placeholder="Enter your Password"
+><br><br>
+<input type="email" id="email" name="email" placeholder="Enter email-id"><br><br>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"><br><br>
+<input type="text" id="birthday" name="birthday" placeholder="dd-mm-yyyy"
+pattern="[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}"><br><br><br>
+<input type="radio" name="gender" value="male" width="100%">Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="radio" name="gender" value="other"> Other<br><br>
+<input type="checkbox" id="lang1" name="lang1" value="Spanish">
+<label for="lang1">Spanish</label><br>
+<input type="checkbox" id="vehicle2" name="lang2" value="French">
+<label for="lang2">French</label><br>
+<input type="checkbox" id="lang3" name="lang3" value="English">
+<label for="lang3">English</label><br><br>
+<select id="states" name="states" placeholder="Select a state">
+<option value="MAH">Maharashtra</option>
+<option value="TN">Tamil Nadu</option>
+<option value="KAR">Karnataka</option>
+<option value="RAJ">Rajasthan</option>
+</select><br><br>
+<br><br><input type="submit" id="but" value="Submit">
+</form>
+</div>
+</body>
+</html>

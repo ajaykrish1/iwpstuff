@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter the number" />
+    <button>Calculate</button>
+    <div class="output"></div>
+  </body>
+  <script>
+    var res = document.querySelector(".output");
+
+    function fibonacci(num) {
+      var a = 0;
+      var b = 1;
+      var sum = 0;
+      res.append("0");
+      while (sum <= num) {
+        a = b;
+        b = sum;
+        sum = a + b;
+        if (sum < num) res.append(" " + sum);
+      }
+    }
+
+    document.querySelector("button").addEventListener("click", function () {
+      res.innerHTML = " ";
+      var n = document.querySelector("input").value;
+      fibonacci(n);
+    });
+  </script>
+</html>

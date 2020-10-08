@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter Word" />
+    <button>Check</button>
+    <div class="result"></div>
+  </body>
+  <script>
+    var result = document.querySelector(".result");
+    function check_Palindrome(str_entry) {
+      var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "");
+      var ccount = 0;
+      if (cstr === "") {
+        return false;
+      }
+      if (cstr.length % 2 === 0) {
+        ccount = cstr.length / 2;
+      } else {
+        if (cstr.length === 1) {
+          return true;
+        } else {
+          ccount = (cstr.length - 1) / 2;
+        }
+      }
+      for (var x = 0; x < ccount; x++) {
+        if (cstr[x] != cstr.slice(-1 - x)[0]) {
+          return false;
+        }
+      }
+      return true;
+    }
+    document.querySelector("button").addEventListener("click", () => {
+      var word = document.querySelector("input").value;
+      if (check_Palindrome(word)) result.innerHTML = `${word} is a pallindrome`;
+      else result.innerHTML = `${word} is not a pallindrome`;
+    });
+  </script>
+</html>

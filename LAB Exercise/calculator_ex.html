@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      width: 23%;
+    }
+
+    #res {
+      background-color: white;
+      border: solid;
+      height: 58px;
+      font-size: 40px;
+    }
+
+    #AC,
+    #equal,
+    #mod,
+    #Clr,
+    #Sum,
+    #Sub,
+    #Div,
+    #Mul {
+      color: orangered;
+    }
+    #square,
+    #squareroot {
+      width: 50%;
+      color: orangered;
+    }
+    button {
+      width: 25%;
+      height: 46px;
+      font-size: 18px;
+      margin: 0px;
+      float: left;
+    }
+    .btns {
+      border: black solid 2px;
+    }
+  </style>
+  <body>
+    <div id="res"></div>
+    <div class="btns">
+      <button class="bttn" id="AC">AC</button>
+      <button class="bttn" id="Clr">C</button>
+      <button class="bttn" id="mod">%</button>
+      <button class="bttn" id="Div">/</button>
+
+      <button class="bttn" id="btn1">7</button>
+      <button class="bttn" id="btn2">8</button>
+      <button class="bttn" id="btn3">9</button>
+      <button class="bttn" id="Mul">*</button>
+      <button class="bttn" id="btn4">4</button>
+      <button class="bttn" id="btn5">5</button>
+      <button class="bttn" id="btn6">6</button>
+      <button class="bttn" id="Sub">N</button>
+      <button class="bttn" id="btn7">1</button>
+      <button class="bttn" id="btn8">2</button>
+      <button class="bttn" id="btn9">3</button>
+      <button class="bttn" id="Sum">+</button>
+
+      <button class="bttn" id="btn00">00</button>
+      <button class="bttn" id="btn0">0</button>
+      <button class="bttn" id="dot">.</button>
+      <button class="bttn" id="equal">=</button>
+      <button class="bttn" id="squareroot">sqr_root</button>
+      <button class="bttn" id="square">sqr</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="cal.js"></script>
+  </body>
+</html>

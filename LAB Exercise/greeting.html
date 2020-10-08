@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Greeting based on time</h1>
+  </body>
+  <script>
+    var d = new Date();
+    var time = d.getHours();
+    console.log(time);
+
+    if (time < 12) {
+      document.write("<div>Good morning!</div>");
+    } else if (time >= 12 && time < 15) {
+      document.write("<div>Good afternoon!</div>");
+    } else if (time >= 15 && time < 18) {
+      document.write("<div>Good Evening</div>");
+    } else {
+      document.write("<div>Good Night</div>");
+    }
+  </script>
+</html>

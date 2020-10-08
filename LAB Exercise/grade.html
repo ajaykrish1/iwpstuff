@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" placeholder="Enter the number" />
+    <button>Calculate</button>
+    <div class="result"></div>
+  </body>
+  <script>
+    document.querySelector("button").addEventListener("click", () => {
+      var score = document.querySelector("input").value;
+      var result = document.querySelector(".result");
+      if (score > 90) result.innerHTML = "S grade";
+      else if (score > 80 && score <= 90) result.innerHTML = "A grade";
+      else if (score > 70 && score <= 80) result.innerHTML = "B grade";
+      else if (score > 60 && score <= 70) result.innerHTML = "C grade";
+      else if (score > 50 && score <= 60) result.innerHTML = "D grade";
+      else result.innerHTML = "E grade";
+    });
+  </script>
+</html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pages a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.tiles {
+  display: block;
+  width: 500px;
+  float: left;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 20px;
+  font-size: 20px;
+}
+.many {
+  display: flex;
+  padding: 20px;
+}
+.many a {
+  color: red;
+}
+.div1 {
+  background: rgb(255, 94, 0);
+  display: flex;
+  justify-content: space-between;
+}
+.txt {
+  color: white;
+  font-size: 30px;
+  padding: 40px;
+  padding-right: 100px;
+}
+p .txt {
+  font-size: 22px;
+}
+.img1 {
+  width: 700px;
+  height: 500px;
+  display: block;
+  border: white 10px solid;
+  border-top: none;
+  float: right;
+}
+.img {
+  padding: 10px;
+  padding-right: 100px;
+  padding-top: 0px;
+  padding-bottom: 110px;
+}
+img {
+  width: 500px;
+  height: 320px;
+  border: 5px solid white;
+}
+.title {
+  display: inline-block;
+}
+.pages {
+  display: block;
+  float: right;
+  color: white;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(29, 27, 27);
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.main {
+  display: flex;
+}
+
+.center {
+  flex: 1;
+  border-top: white solid 10px;
+}
+
+.div2 {
+  display: flex;
+  background: rgb(29, 27, 27);
+  color: white;
+}
+.bttn {
+  color: white;
+  background: rgb(29, 27, 27);
+  padding: 20px;
+  font-size: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.last {
+  display: flex;
+  background: rgb(29, 27, 27);
+  color: white;
+  justify-content: center;
+}
