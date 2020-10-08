@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  overflow-x: hidden;
+  /*   filter: grayscale(100%); */
+  /*   position:relative; */
+}
+
+.city {
+  height: 800px;
+
+  position: absolute;
+  background: url("city.jpg");
+  background-repeat: repeat-x;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  animation: highway 10s linear infinite;
+}
+
+.road {
+  /*  overflow-y:hidden; */
+
+  height: 200px;
+  width: 100%;
+
+  background: url("https://cdn.clipart.email/52de4bfb0b300bcfd6542a1dc5b3854a_road-side-view-clipart-clipartxtras_612-360.jpeg");
+  background-repeat: repeat-x;
+  position: absolute;
+
+  /*    position:absolute; */
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-position: center;
+  animation: highway 5s linear infinite;
+}
+
+.car {
+  height: 100%;
+  width: 100%;
+  background: url("https://vlogicmedia1.blob.core.windows.net/vehicle-images/26/ea8401ff-51b8-4cff-8590-38bc70d4bf0c.png")
+    no-repeat;
+  position: relative;
+
+  top: 61%;
+  z-index: 2;
+}
+.wheel1 {
+  /*   height:100%;
+    width:100%;
+    background: url("https://pngimg.com/uploads/car_wheel/car_wheel_PNG23298.png") no-repeat; */
+  /*   background-size: 110px; */
+  position: absolute;
+  top: 180px;
+  left: 527px;
+  animation: wheel 8s linear infinite;
+  filter: saturate(40%);
+}
+.wheel2 {
+  /*   height:100%;
+    width:100%;
+    background: url("https://pngimg.com/uploads/car_wheel/car_wheel_PNG23298.png") no-repeat; */
+  /*   background-size: 110px; */
+  position: absolute;
+  top: 180px;
+  left: 135px;
+  animation: wheel 8s linear infinite;
+  filter: saturate(40%);
+}
+@keyframes highway {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(3600deg);
+  }
+}

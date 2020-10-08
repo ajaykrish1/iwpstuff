@@ -1,0 +1,307 @@
+@keyframes example {
+  0% {
+    background-color: red;
+    transform: rotate(0deg);
+    left: 0px;
+    top: 400px;
+  }
+
+  90% {
+    transform: rotate(760deg);
+    background-color: coral;
+    left: 600px;
+    top: 400px;
+  }
+  100% {
+    transform: rotate(720deg);
+    background-color: coral;
+    left: 598px;
+    top: 400px;
+  }
+}
+@keyframes example1 {
+  0% {
+    background-color: red;
+    transform: rotate(0deg);
+    left: 0px;
+    top: 400px;
+  }
+
+  90% {
+    transform: rotate(760deg);
+    background-color: coral;
+    left: 680px;
+    top: 400px;
+  }
+  100% {
+    transform: rotate(720deg);
+    background-color: coral;
+    left: 678px;
+    top: 400px;
+  }
+}
+@keyframes example2 {
+  0% {
+    background-color: red;
+    transform: rotate(0deg);
+    left: 0px;
+    top: 400px;
+  }
+
+  90% {
+    transform: rotate(760deg);
+    background-color: coral;
+    left: 760px;
+    top: 400px;
+  }
+  100% {
+    transform: rotate(720deg);
+    background-color: coral;
+    left: 758px;
+    top: 400px;
+  }
+}
+@keyframes example3 {
+  0% {
+    background-color: red;
+    transform: rotate(0deg);
+    left: 0px;
+    top: 400px;
+  }
+
+  90% {
+    transform: rotate(760deg);
+    background-color: coral;
+    left: 840px;
+    top: 400px;
+  }
+  100% {
+    transform: rotate(720deg);
+    background-color: coral;
+    left: 838px;
+    top: 400px;
+  }
+}
+@keyframes example4 {
+  0% {
+    background-color: red;
+    transform: rotate(0deg);
+    left: 0px;
+    top: 400px;
+  }
+
+  90% {
+    transform: rotate(760deg);
+    background-color: coral;
+    left: 920px;
+    top: 400px;
+  }
+  100% {
+    transform: rotate(720deg);
+    background-color: coral;
+    left: 918px;
+    top: 400px;
+  }
+}
+@keyframes example5 {
+  0% {
+    background-color: red;
+    transform: rotate(0deg);
+    left: 0px;
+    top: 400px;
+  }
+
+  90% {
+    transform: rotate(760deg);
+    background-color: coral;
+    left: 1000px;
+    top: 400px;
+  }
+  100% {
+    transform: rotate(720deg);
+    background-color: coral;
+    left: 998px;
+    top: 400px;
+  }
+}
+@keyframes example6 {
+  0% {
+    background-color: red;
+    transform: rotate(0deg);
+    left: 0px;
+    top: 400px;
+  }
+
+  90% {
+    transform: rotate(760deg);
+    background-color: coral;
+    left: 1080px;
+    top: 400px;
+  }
+  100% {
+    transform: rotate(720deg);
+    background-color: coral;
+    left: 1078px;
+    top: 400px;
+  }
+}
+
+.Lanimation {
+  width: 119.31px;
+  position: absolute;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: forwards;
+  display: block;
+  font-size: x-large;
+  text-align: center;
+  top: -100px;
+  top: -200px;
+}
+
+.Oanimation {
+  width: 119.31px;
+  position: absolute;
+  background-color: red;
+  animation-name: example1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: forward;
+  display: block;
+  font-size: x-large;
+  text-align: center;
+  top: -200px;
+}
+.Aanimation {
+  width: 119.31px;
+  position: absolute;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: forward;
+  display: block;
+  font-size: x-large;
+  text-align: center;
+  top: -200px;
+}
+.Danimation {
+  width: 119.31px;
+  position: absolute;
+  background-color: red;
+  animation-name: example3;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: forward;
+  display: block;
+  font-size: x-large;
+  text-align: center;
+  top: -200px;
+}
+.Ianimation {
+  width: 119.31px;
+  position: absolute;
+  background-color: red;
+  animation-name: example4;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: forward;
+  display: block;
+  font-size: x-large;
+  text-align: center;
+  top: -200px;
+}
+.Nanimation {
+  width: 119.31px;
+  position: absolute;
+  background-color: red;
+  animation-name: example5;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: forward;
+  display: block;
+  font-size: x-large;
+  text-align: center;
+  top: -200px;
+}
+.Ganimation {
+  width: 119.31px;
+  position: absolute;
+  background-color: red;
+  animation-name: example6;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-direction: forwards;
+  display: block;
+  font-size: x-large;
+  text-align: center;
+  top: -200px;
+}
+.mover {
+  width: 50px;
+  height: 50px;
+  background: #f06d06;
+  border-radius: 50%;
+  animation: move 5s infinite ease-in-out;
+}
+
+@keyframes move {
+  20%,
+  100% {
+    opacity: 0;
+    transform: translate(200px, 0);
+  }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+
+.area {
+  width: 593.17px;
+  height: 117.31px;
+  margin: 0 auto;
+  position: absolute;
+  top: 400px;
+  left: 600px;
+  border: 2px solid #f06d06;
+  border-radius: 50px;
+}
+body {
+  background-color: white;
+}
+
+.L,
+.O,
+.A,
+.D,
+.I,
+.N,
+.G {
+  color: white;
+}
