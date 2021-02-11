@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/add">Insert Item</a></li>
+          <li><a href="/find">Find Item</a></li>
+        </ul>
+      </nav>
+
+    
+  
+      <% if(info.length!=0){for(var i=0;i< info.length; i++) {%>
+        <div>Info<%= i %></div><br>
+      <div><%= info[i].FirstName %></div>
+      <div><%= info[i].LastName %></div>
+      <div><%= info[i].Age %></div>
+      <div><%= info[i].Department %></div>
+      <div><%= info[i].PhoneNumber%></div>
+      <div><%= info[i].ExtensionNumber %></div>
+      <div><%= info[i].School%></div><br><br>
+      <%  }}else{ %>
+<h1>not found</h1>
+        <%} %>
+</body>
+</html>
